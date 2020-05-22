@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AB_forms</title>
+        <link rel="stylesheet" href="css/production.css">
+    </head>
+    <body>
+        <h1>AB_forms</h1>
+        <div class="forms">
+
+            <form id="form-sample-one">
+
+                <div class="form-item">
+                    <label for="form-text">Full Name</label>
+                    <input type="text" id="form-text" placeholder="John Smith" autofocus>
+                </div>
+
+                <div class="form-item">
+                    <label for="form-telephone">Telephone number</label>
+                    <input type="tel" id="form-telephone" placeholder="123-123-1234">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-email">Email Address</label>
+                    <input type="text" id="form-email" placeholder="account@domain.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-textarea">Message</label>
+                    <textarea id="form-textarea" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo..."></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="form-number">Enter a number</label>
+                    <input type="number" id="form-number" placeholder="0110100001100101011011000110110001101111">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-password">Enter your password</label>
+                    <input type="password" id="form-password" value="12345678910">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-url">Enter a URL</label>
+                    <input type="url" id="form-url" placeholder="https://www.andybeckmann.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-date">Pick a day</label>
+                    <input type="date" id="form-date">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-time">Choose a time</label>
+                    <input type="time" id="form-time">
+                </div>
+
+            </form>
+
+            <form id="form-sample-two">
+
+                <div class="form-item">
+                    <label for="form-select">Select a variation</label>
+                    <div class="form-item-select-wrapper">
+                        <select id="form-select">
+                            <option value>Choose an option</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label id="form-checkbox-label">Check a box</label>
+                    <ul class="form-item-list" role="group" aria-labeledby="form-checkbox-label">
+                        <li>
+                            <input type="checkbox" role="checkbox" name="checkbox-option-one" id="checkbox-option-one" checked aria-checked="true">
+                            <label for="checkbox-option-one">Good</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" role="checkbox" name="checkbox-option-two" id="checkbox-option-two">
+                            <label for="checkbox-option-two">Great</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" role="checkbox" name="checkbox-option-three" id="checkbox-option-three" checked aria-checked="true">
+                            <label for="checkbox-option-three">Grand</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" role="checkbox" name="checkbox-option-four" id="checkbox-option-four">
+                            <label for="checkbox-option-four">Wonderful</label>
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="form-item">
+                    <label id="form-radio-group-label">Select one option</label>
+                    <ul role="radiogroup" aria-labeledby="form-radiogroup-label"class="form-item-list">
+                        <li>
+                            <input type="radio" name="radio-option-one" id="radio-option-one" checked aria-checked="true">
+                            <label for="radio-option-one">Good</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-option-two" id="radio-option-two">
+                            <label for="radio-option-two">Great</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-option-three" id="radio-option-three">
+                            <label for="radio-option-three">Grand</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio-option-four" id="radio-option-four">
+                            <label for="radio-option-four">Wonderful</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form-item">
+                    <label for="form-color">Pick a color</label>
+                    <input type="color" id="form-color" value="#72d5fc">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-file">Upload a file</label>
+                    <input type="file" id="form-file">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-range">Choose a range</label>
+                    <input type="range" id="form-range">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-search">Search for something</label>
+                    <input type="search" id="form-search" placeholder="Search...">
+                </div>
+
+                <div class="form-item">
+                    <input type="submit" value="Submit">
+                    <input type="button" value="Copy">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+
+        </div>
+    </body>
+</html>

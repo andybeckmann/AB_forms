@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-dart-sass": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-terser": "*",
+    "grunt-contrib-watch": "*",
+    "load-grunt-tasks": "*"
+  }
+}

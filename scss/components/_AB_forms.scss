@@ -1,0 +1,317 @@
+/**
+ * AB_forms
+ * version: 1.0.0
+ */
+
+.forms {
+		
+	/**
+	 * Form item row style
+	 */
+	.form-item {
+		margin-bottom: 35px;
+		position: relative;
+
+		.form-item-list {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			border-top: 1px solid #222;
+
+			li {
+				display: block;
+				padding: 16px;
+
+				&:nth-child(1n) {
+					background: #fcfcfc;
+				}
+
+				&:nth-child(2n) {
+					background: #f0f0f0;
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Labels
+	 */
+	label {
+		font-size: 18px;
+		line-height: 150%;
+	}
+
+	label:first-child {
+		display: block;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 15px 0;
+	}
+	
+	/**
+	 * Input base style
+	 */
+	input[type=text], input[type="tel"], input[type=email], input[type=month], input[type=number], input[type=password], input[type=date], input[type=file], input[type=search], input[type=time], input[type=url], textarea {
+		border: 1px solid #ddd;
+		background: #fcfcfc;
+		padding: 16px;
+		width: 100%;
+		font-size: 18px;
+
+		&:focus {
+			outline: none;
+			border: 5px dashed #999;
+			padding: 12px;
+		}
+	}
+	
+	/**
+	 * Button base style
+	 */
+	input[type=submit], input[type=button], input[type=reset] {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 10px 20px;
+		border-radius: 3px;
+		font-size: 18px;
+		background: #666;
+		color: #fff;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	/**
+	 * Submit button
+	 */
+	input[type=submit] {
+		background: #222;
+		color: #eee;
+	}
+	
+	/**
+	 * Reset button
+	 */
+	input[type=reset] {
+		background: #ccc;
+		color: #111;
+	}
+	
+	/**
+	 * Textarea
+	 */
+	textarea {
+		min-height: 150px;
+		line-height: 150%;
+		resize: none;
+	}
+
+	/**
+	 * Date
+	 */
+	#form-date {
+		color: #222;
+		font-family: sans-serif;
+	}
+
+	/**
+	 * Time
+	 */
+	#form-time {
+		color: #222;
+		font-family: sans-serif;
+	}
+
+	/**
+	 * Checkboxes
+	 */
+	input[type=checkbox] {
+		position: absolute;
+		opacity: 0; 
+
+		& + label {
+			position: relative;
+			cursor: pointer;
+			padding: 0;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+
+		& + label:before {
+			content: '';
+			margin-right: 10px;
+			margin-top: -2px;
+			display: inline-block;
+			vertical-align: text-top;
+			width: 26px;
+			height: 26px;
+			border: 1px solid #ccc;
+			background: #fff;
+			border-radius: 3px;
+	  	}
+
+		&:hover + label:before {
+			background: #eee;
+		}
+
+		&:checked + label:before {
+			background: #111;
+		}
+	
+		&:checked + label:after {
+			content: '\000D7';
+			color: #fff;
+			position: absolute;
+			left: 8px;
+			top: -2px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	/**
+	 * Color
+	 */
+	input[type=color] {
+		-webkit-appearance: none;
+		border: 1px solid #ddd;
+		width: 75px;
+		height: 50px;
+		cursor: pointer;
+
+		&::-webkit-color-swatch-wrapper {
+			border: 0;
+			padding: 5px;
+		}
+
+		&::-webkit-color-swatch {
+			border: none;
+		}
+	}
+	
+	/**
+	 * File upload
+	 */
+	input[type=file] {
+		padding-left: 35px;
+		color: #333;
+		position: relative;
+
+		&::-webkit-file-upload-button {
+			visibility: hidden;
+		}
+
+		&::before {
+			content: 'Upload File...';
+			display: inline-block;
+			background: linear-gradient(top, #f9f9f9, #e3e3e3);
+			border-radius: 3px;
+			padding: 5px 8px;
+			outline: none;
+			white-space: nowrap;
+			-webkit-user-select: none;
+			cursor: pointer;
+			background: #111;
+			color: #fff;
+			font-weight: bold;
+			font-size: 14px;
+			margin-left: -25px;
+			display: inline;
+		}
+	}
+	
+	/**
+	 * Range
+	 */
+	input[type=range] {
+		-webkit-appearance: none;
+		width: 100%; 
+		background: transparent; 
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+		}
+
+		&:focus {
+		  outline: none;
+		}
+
+		&::-webkit-slider-runnable-track {
+			width: 100%;
+			height: 5px;
+			cursor: pointer;
+			background: #ddd;
+			border-radius: 2px;
+		}
+
+		&:focus::-webkit-slider-runnable-track {
+			background: #ddd;
+		}
+
+		&::-moz-range-track {
+			width: 100%;
+			height: 5px;
+			cursor: pointer;
+			background: #ddd;
+			border-radius: 2px;
+			border: 1px solid green;
+		}
+
+		// Thumb
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			height: 25px;
+			width: 10px;
+			border-radius: 3px;
+			background: #111;
+			cursor: pointer;
+			margin-top: -10px;
+		}
+
+		&::-moz-range-thumb {
+			height: 25px;
+			width: 10px;
+			border-radius: 3px;
+			background: #111;
+			cursor: pointer;
+		}
+	}
+	
+	/**
+	 * Select
+	 */
+	#form-select {
+		background: #111;
+		color: #fff;
+		width: 175px;
+		padding: 16px;
+		display: inline-block;
+		margin: 0;
+		border-radius: 3px;
+		-webkit-appearance: none;
+		border: none;
+		position: relative;
+		min-width: 100%;
+		font-size: 18px;
+
+		&:focus {
+			outline: none;
+			border: 5px dashed #999;
+			padding: 11px;
+		}
+	}
+
+	.form-item-select-wrapper {
+		display: block;
+		position: relative;
+	}
+
+	.form-item-select-wrapper::after {
+		content: '\25BE';
+		right: 21px;
+		top: 10px;
+		position: absolute;
+		color: #fff;
+		font-size: 24px;
+	}
+}

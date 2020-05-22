@@ -1,0 +1,26 @@
+// Global styles
+@use 'global';
+
+// AB_forms
+@use 'components/AB_forms';
+
+// Demo styles
+.forms {
+
+	display: flex;
+
+	form {
+
+		@media (min-width: 768px) {
+			width: 49%;
+			margin-right: 1%;
+		}
+	}
+
+	form:nth-child(2) {
+		@media (min-width: 768px) {
+			width: 49%;
+			margin-left: 1%;
+		}
+	}
+}
