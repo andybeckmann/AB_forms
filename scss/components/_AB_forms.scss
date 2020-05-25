@@ -170,6 +170,57 @@
 	}
 
 	/**
+	 * Radio buttons
+	 */
+	input[type=radio] {
+		position: absolute;
+		opacity: 0; 
+		
+		& + label {
+			position: relative;
+			cursor: pointer;
+			padding: 0;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+
+		& + label:before {
+			content: '';
+			margin-right: 10px;
+			margin-top: -2px;
+			display: inline-block;
+			vertical-align: text-top;
+			width: 26px;
+			height: 26px;
+			border: 1px solid #ccc;
+			background: #fff;
+			border-radius: 50%;
+	  	}
+
+		&:hover + label:before {
+			background: #eee;
+		}
+
+		&:checked + label:before {
+			background: #111;
+			border-radius: 50%;
+		}
+	
+		&:checked + label:after {
+			content: '';
+			width: 26px;
+			height: 26px;
+			border: 1px solid #ccc;
+			background: #fff;
+			border-radius: 50%;
+			transform: scale(.35);
+			position: absolute;
+			top: -2px;
+			left: 0;
+		}
+	}
+
+	/**
 	 * Color
 	 */
 	input[type=color] {
