@@ -3,9 +3,7 @@
  * version: 1.0.0
  */
 		
-/**
- * Form item row style
- */
+// Form items
 .form-item {
 	margin-bottom: 2rem;
 	position: relative;
@@ -31,9 +29,7 @@
 	}
 }
 
-/**
- * Labels
- */
+// Labels
 label {
 	font-size: 1.125rem;
 	line-height: 150%;
@@ -46,9 +42,7 @@ label:first-child {
 	margin: 1rem 0;
 }
 
-/**
- * Input base style
- */
+// Input base styles
 input[type=text], input[type="tel"], input[type=email], input[type=month], input[type=number], input[type=password], input[type=date], input[type=file], input[type=search], input[type=time], input[type=url], textarea {
 	border: 0.0625rem solid #ddd;
 	background: #fcfcfc;
@@ -63,9 +57,7 @@ input[type=text], input[type="tel"], input[type=email], input[type=month], input
 	}
 }
 
-/**
- * Button base style
- */
+// Button base styles
 input[type=submit], input[type=button], input[type=reset] {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -80,50 +72,38 @@ input[type=submit], input[type=button], input[type=reset] {
 	text-align: center;
 }
 
-/**
- * Submit button
- */
+// Submit button
 input[type=submit] {
 	background: #222;
 	color: #eee;
 }
 
-/**
- * Reset button
- */
+// Reset button
 input[type=reset] {
 	background: #ccc;
 	color: #111;
 }
 
-/**
- * Textarea
- */
+// Text area
 textarea {
 	min-height: 10rem;
 	line-height: 150%;
 	resize: none;
 }
 
-/**
- * Date
- */
+// Date
 #form-date {
 	color: #222;
 	font-family: sans-serif;
 }
 
-/**
- * Time
- */
+// Time
 #form-time {
 	color: #222;
 	font-family: sans-serif;
 }
 
-/**
- * Checkboxes
- */
+// Checkbox
 input[type=checkbox] {
 	position: absolute;
 	opacity: 0; 
@@ -167,9 +147,7 @@ input[type=checkbox] {
 	}
 }
 
-/**
- * Radio buttons
- */
+// Radio button
 input[type=radio] {
 	position: absolute;
 	opacity: 0; 
@@ -218,9 +196,7 @@ input[type=radio] {
 	}
 }
 
-/**
- * Color
- */
+// Color
 input[type=color] {
 	-webkit-appearance: none;
 	border: 0.0625rem solid #ddd;
@@ -238,9 +214,7 @@ input[type=color] {
 	}
 }
 
-/**
- * File upload
- */
+// File upload
 input[type=file] {
 	padding-left: 2.25rem;
 	color: #333;
@@ -268,9 +242,7 @@ input[type=file] {
 	}
 }
 
-/**
- * Range
- */
+// Range
 input[type=range] {
 	-webkit-appearance: none;
 	width: 100%; 
@@ -325,9 +297,7 @@ input[type=range] {
 	}
 }
 
-/**
- * Select
- */
+// Select
 #form-select {
 	background: #111;
 	color: #fff;
