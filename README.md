@@ -17,13 +17,10 @@ AB_forms is a collection of form input styles using SCSS.
 
 ### HTML
 ```html
-<div class="forms">
-    <form id="form-sample-one">
-        <div class="form-item">
-            <label for="form-text">Full Name</label>
-            <input type="text" id="form-text" placeholder="John Smith" autofocus>
-        </div>
-        ...
-    </form>
-</div>
+<form>
+    <div class="form-item">
+        <label for="form-text">Full Name</label>
+        <input type="text" id="form-text" placeholder="John Smith" autofocus>
+    </div>
+</form>
 ```
