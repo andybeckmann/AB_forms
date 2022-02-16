@@ -17,9 +17,6 @@ body {
  * AB_forms
  * version: 1.0.0
  */
-/**
- * Form item row style
- */
 .form-item {
   margin-bottom: 2rem;
   position: relative;
@@ -41,9 +38,6 @@ body {
   background: #f0f0f0;
 }
 
-/**
- * Labels
- */
 label {
   font-size: 1.125rem;
   line-height: 150%;
@@ -56,9 +50,6 @@ label:first-child {
   margin: 1rem 0;
 }
 
-/**
- * Input base style
- */
 input[type=text], input[type=tel], input[type=email], input[type=month], input[type=number], input[type=password], input[type=date], input[type=file], input[type=search], input[type=time], input[type=url], textarea {
   border: 0.0625rem solid #ddd;
   background: #fcfcfc;
@@ -72,9 +63,6 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, input[ty
   padding: 0.75rem;
 }
 
-/**
- * Button base style
- */
 input[type=submit], input[type=button], input[type=reset] {
   text-decoration: none;
   text-transform: uppercase;
@@ -89,50 +77,32 @@ input[type=submit], input[type=button], input[type=reset] {
   text-align: center;
 }
 
-/**
- * Submit button
- */
 input[type=submit] {
   background: #222;
   color: #eee;
 }
 
-/**
- * Reset button
- */
 input[type=reset] {
   background: #ccc;
   color: #111;
 }
 
-/**
- * Textarea
- */
 textarea {
   min-height: 10rem;
   line-height: 150%;
   resize: none;
 }
 
-/**
- * Date
- */
-#form-date {
+.form-date {
   color: #222;
   font-family: sans-serif;
 }
 
-/**
- * Time
- */
-#form-time {
+.form-time {
   color: #222;
   font-family: sans-serif;
 }
 
-/**
- * Checkboxes
- */
 input[type=checkbox] {
   position: absolute;
   opacity: 0;
@@ -171,9 +141,6 @@ input[type=checkbox]:checked + label:after {
   font-weight: bold;
 }
 
-/**
- * Radio buttons
- */
 input[type=radio] {
   position: absolute;
   opacity: 0;
@@ -217,9 +184,6 @@ input[type=radio]:checked + label:after {
   left: 0;
 }
 
-/**
- * Color
- */
 input[type=color] {
   -webkit-appearance: none;
   border: 0.0625rem solid #ddd;
@@ -235,9 +199,6 @@ input[type=color]::-webkit-color-swatch {
   border: none;
 }
 
-/**
- * File upload
- */
 input[type=file] {
   padding-left: 2.25rem;
   color: #333;
@@ -263,9 +224,6 @@ input[type=file]::before {
   display: inline;
 }
 
-/**
- * Range
- */
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
@@ -312,10 +270,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/**
- * Select
- */
-#form-select {
+.form-select {
   background: #111;
   color: #fff;
   width: 10rem;
@@ -329,7 +284,7 @@ input[type=range]::-moz-range-thumb {
   min-width: 100%;
   font-size: 1.125rem;
 }
-#form-select:focus {
+.form-select:focus {
   outline: none;
   border: 0.3125rem dashed #999;
   padding: 0.75rem;

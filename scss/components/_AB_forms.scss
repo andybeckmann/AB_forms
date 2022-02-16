@@ -92,13 +92,13 @@ textarea {
 }
 
 // Date
-#form-date {
+.form-date {
 	color: #222;
 	font-family: sans-serif;
 }
 
 // Time
-#form-time {
+.form-time {
 	color: #222;
 	font-family: sans-serif;
 }
@@ -298,7 +298,7 @@ input[type=range] {
 }
 
 // Select
-#form-select {
+.form-select {
 	background: #111;
 	color: #fff;
 	width: 10rem;
