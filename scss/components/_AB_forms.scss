@@ -114,6 +114,11 @@ input[type=checkbox] {
 		padding: 0;
 		margin-right: 1rem;
 		margin-top: 1rem;
+
+		span {
+			position: relative;
+			top: 0.25rem;
+		}
 	}
 
 	& + label:before {
@@ -158,6 +163,11 @@ input[type=radio] {
 		padding: 0;
 		margin-right: 1rem;
 		margin-top: 1rem;
+
+		span {
+			position: relative;
+			top: 0.1875rem;
+		}
 	}
 
 	& + label:before {
