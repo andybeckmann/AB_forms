@@ -56,22 +56,21 @@ input[type=text], input[type=tel], input[type=email], input[type=month], input[t
   padding: 1rem;
   width: 100%;
   font-size: 1.125rem;
+  border-radius: 0.1875rem;
 }
 input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=date]:focus, input[type=file]:focus, input[type=search]:focus, input[type=time]:focus, input[type=url]:focus, textarea:focus {
   outline: none;
-  border: 0.3125rem dashed #999;
+  border: 0.1875rem dashed #999;
   padding: 0.75rem;
 }
 
 input[type=submit], input[type=button], input[type=reset] {
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
   padding: 0.625rem 1.25rem;
   border-radius: 0.1875rem;
   border: none;
   font-size: 1.125rem;
-  background: #666;
+  background: #222;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -79,7 +78,7 @@ input[type=submit], input[type=button], input[type=reset] {
 
 input[type=submit] {
   background: #222;
-  color: #eee;
+  color: #fff;
 }
 
 input[type=reset] {
@@ -91,6 +90,7 @@ textarea {
   min-height: 10rem;
   line-height: 150%;
   resize: none;
+  font-family: sans-serif;
 }
 
 .form-date {
