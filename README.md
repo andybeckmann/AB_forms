@@ -12,7 +12,6 @@ AB_forms is a collection of form input styles using SCSS.
 ### Styles
 [AB_forms/scss/components/_AB_forms.scss](https://github.com/andybeckmann/AB_forms/blob/master/scss/components/_AB_forms.scss)
 
-
 ## Example
 
 ### HTML
@@ -20,7 +19,7 @@ AB_forms is a collection of form input styles using SCSS.
 <form>
     <div class="form-item">
         <label for="form-text">Full Name</label>
-        <input type="text" id="form-text" placeholder="John Smith" autofocus>
+        <input type="text" id="form-text">
     </div>
 </form>
 ```
